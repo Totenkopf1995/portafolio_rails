@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/home/education', to: 'home#education'
   get '/home/proyect', to: 'home#proyect'
 
+  post 'posts', to: 'home#create'
+
   get "up" => "rails/health#show", as: :rails_health_check
 
 end

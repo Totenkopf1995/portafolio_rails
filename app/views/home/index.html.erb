@@ -1,5 +1,5 @@
 <body class="bg-blue-950">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 container mx-auto py-5 text-white">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto py-5 text-white">
     <div class="text-left py-10 sm:py-40">
       <div class="">
         <h1 class="text-5xl font-bold mb-4">Andres felipe <br>
@@ -10,36 +10,27 @@
           Completé cursos en Ciberseguridad Básica y Desarrollo Web.
         </p>
       </div>
-      <div class="grid grid-rows-3 gap-8">
-        <div class="w-16 h-19">
-          <a href="https://www.linkedin.com/in/andrestorresdeveloper" target="_blank">
-            <%= image_tag('linkedin.png', alt: 'linkedin') %>
-          </a>
-          <p class="text-sm ml-2">
-            LinkedIn
-          </p>
+
+      <div class="grid grid-rows-3 gap-8 ">
+        <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
+          <%= link_to image_tag('linkedin.png', alt: 'Linkedin').concat("www.linkedin.com/in/andrestorresdeveloper"),
+                      "https://www.linkedin.com/in/andrestorresdeveloper", class: "flex"%>
         </div>
-        <div class="w-16 h-19">
-          <a href="https://github.com/Totenkopf1995" target="_blank">
-            <%= image_tag('github.png', alt: 'github') %>
-          </a>
-          <p class="text-sm ml-2">
-            GitHub
-          </p>
+
+        <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
+          <%= link_to image_tag('github.png', alt: 'github').concat("github.com/Totenkopf1995"),
+                      "https://github.com/Totenkopf1995", class: "flex"%>
         </div>
-        <div class="w-16 h-19">
-          <a href="URL_DEL_CV" target="_blank">
-            <%= image_tag('cv.png', alt: 'CV') %>
-          </a>
-          <p class="text-sm ml-2">
-            CV
-          </p>
+
+        <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
+          <%= link_to image_tag('cv.png', alt: 'CV').concat("CV"),
+                      " ", class: "flex"%>
         </div>
       </div>
     </div>
 
-    <div class="">
-      <%= image_tag('foto.png', alt: 'foto') %>
+    <div class="shadow-lg shadow-cyan-500/50 rounded-full">
+      <%= image_tag('foto.png', alt: 'foto', class: "rounded-full") %>
     </div>
   </div>
 </body>

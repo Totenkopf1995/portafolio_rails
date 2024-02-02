@@ -18,4 +18,8 @@ class HomeController < ApplicationController
   def aptitudes
 
   end
+
+  def create
+    # code here
+  end
 end
