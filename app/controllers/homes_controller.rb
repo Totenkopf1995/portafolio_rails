@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class HomesController < ApplicationController
   def index
 
   end
@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   end
 
   def contact
-
+    @contacto = Contacto.new
   end
 
   def education
@@ -19,7 +19,4 @@ class HomeController < ApplicationController
 
   end
 
-  def create
-    # code here
-  end
 end

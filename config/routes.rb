@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root 'homes#index'
 
-  get '/home/index', to: 'home#index'
-  get '/home/aptitudes', to: 'home#aptitudes'
-  get '/home/contact', to: 'home#contact'
-  get '/home/education', to: 'home#education'
-  get '/home/proyect', to: 'home#proyect'
+  get '/homes/index', to: 'homes#index'
+  get '/homes/aptitudes', to: 'homes#aptitudes'
+  get '/homes/contact', to: 'homes#contact'
+  get '/homes/education', to: 'homes#education'
+  get '/homes/proyect', to: 'homes#proyect'
 
-  post 'posts', to: 'home#create'
-
-  get "up" => "rails/health#show", as: :rails_health_check
-
+  resources :contactos, only: [:new, :create]
 end
+

@@ -1,6 +1,6 @@
 <body>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto py-10">
-    <div class="bg-blue-950 text-white text-left py-40 px-12 shadow-lg shadow-cyan-500/50">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6 container mx-auto py-2 sm:py-10">
+    <div class="bg-blue-950 text-white text-left py-10 sm:py-40 px-12 shadow-lg shadow-cyan-500/50">
       <h1 class="text-2xl font-extrabold font-sans py-5">
         Contacto Directo para Oportunidades Únicas
       </h1>
@@ -22,31 +22,31 @@
     </div>
 
     <div class="bg-gray-400 text-left py-10 px-12 shadow-lg shadow-cyan-500/50">
-      <%= form_for :post, :url => { :action => :create } do |f| %>
-        <div class="grid grid-cols-2 gap-8 py-5">
+      <%= form_for @contacto, url: contactos_path do |f| %>
+    <div class="grid grid-cols-2 gap-8 py-5">
           <div class="col-span-2">
             <h1 class="text-2xl font-extrabold font-sans">Ingresar Detalles</h1>
           </div>
           <div>
             <%= f.label :Nombre_Completo %>
-            <%= f.text_field :Nombre_Completo, class: "w-full" %>
+            <%= f.text_field :nombre, class: "w-full" %>
           </div>
           <div>
             <%= f.label :Correo_Electronico %>
-            <%= f.text_field :Correo_Electronico, class: "w-full" %>
+            <%= f.text_field :email, class: "w-full" %>
           </div>
           <div class="col-span-2">
             <%= f.label :Celular %>
-            <%= f.text_field :Celular, class: "w-full" %>
+            <%= f.text_field :celular, class: "w-full" %>
           </div>
           <div class="col-span-2 mb-4">
             <%= f.label :Mensaje %>
-            <%= f.text_area :Mensaje, class: "w-full h-32" %>
+            <%= f.text_area :mensaje, class: "w-full h-32" %>
           </div>
           <div class="col-span-2 flex justify-center items-center">
-            <div class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-2 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
-              <%= f.submit 'Enviar', class: 'm-2' %>
-            </div>
+            <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-2 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
+              <%= f.submit 'Enviar', class: 'm-2 text-white' %>
+            </button>
           </div>
         </div>
       <% end %>

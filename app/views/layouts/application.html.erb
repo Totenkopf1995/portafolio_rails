@@ -13,6 +13,13 @@
 
   <body>
     <%= render 'shared/header' %>
-    <%= yield %>
+
+    <% flash.each do |key, value| %>
+    <div class="fixed top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-10 py-5 rounded-md mt-20 text-lg font-extrabold">
+      <%= value %>
+    </div>
+    <% end %>
+
+  <%= yield %>
   </body>
 </html>
