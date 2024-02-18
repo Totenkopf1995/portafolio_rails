@@ -10,16 +10,18 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body>
-    <%= render 'shared/header' %>
-
-    <% flash.each do |key, value| %>
-    <div class="fixed top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-10 py-5 rounded-md mt-20 text-lg font-extrabold">
-      <%= value %>
-    </div>
-    <% end %>
-
-  <%= yield %>
+  <body class="bg-gradient-to-r from-blue-700 to-cyan-700 flex flex-col min-h-screen">
+    <header class="bg-gradient-to-r from-cyan-700 to-blue-700 shadow-lg shadow-cyan-500/50">
+      <%= render 'shared/header' %>
+    </header>
+    <main class="flex-grow">
+      <% flash.each do |key, value| %>
+        <%= value %>
+      <% end %>
+      <%= yield %>
+    </main>
+    <footer class="bg-gradient-to-r from-cyan-700 to-blue-700">
+      <%= render 'shared/footer' %>
+    </footer>
   </body>
 </html>

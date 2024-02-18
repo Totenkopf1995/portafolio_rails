@@ -1,55 +1,53 @@
-<body>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6 container mx-auto py-2 sm:py-10">
-    <div class="bg-blue-950 text-white text-left py-10 sm:py-40 px-12 shadow-lg shadow-cyan-500/50">
-      <h1 class="text-2xl font-extrabold font-sans py-5">
-        Contacto Directo para Oportunidades Únicas
-      </h1>
-      <p>
-        ¡Hola! Estoy listo para hablar sobre proyectos emocionantes y responder a tus preguntas.
-        Puedes contactarme por teléfono o correo electrónico. Si prefieres, déjame tu información y un mensaje, y me comunicaré contigo rápidamente.
-        ¡Espero tu mensaje para empezar algo genial juntos!
-      </p>
-      <div class="grid grid-rows-2 gap-3 py-12">
-        <div class="flex">
-          <%= link_to image_tag('telefono.png', alt: 'CV', width: 20, height: 20).concat("+573213008822"),
-                      "tel:+573213008822", class: "flex transition scale-100 hover:scale-150 duration-300"%>
-        </div>
-        <div class="flex">
-          <%= link_to image_tag('correo.png', alt: 'CV', width: 20, height: 20).concat("aftorresl000@gmail.com"),
-                      "mailto:aftorresl000@gmail.com", class: "flex transition scale-100 hover:scale-150 duration-300"%>
-        </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-6 container mx-auto py-2 sm:py-10">
+  <div class="bg-blue-950 text-white text-left py-10 sm:py-40 px-12 shadow-lg shadow-cyan-500/50">
+    <h1 class="text-2xl font-extrabold font-sans py-5">
+      Contacto Directo para Oportunidades Únicas
+    </h1>
+    <p>
+      ¡Hola! Estoy listo para hablar sobre proyectos emocionantes y responder a tus preguntas.
+      Puedes contactarme por teléfono o correo electrónico. Si prefieres, déjame tu información y un mensaje, y me comunicaré contigo rápidamente.
+      ¡Espero tu mensaje para empezar algo genial juntos!
+    </p>
+    <div class="grid grid-rows-2 gap-3 py-12">
+      <div class="flex">
+        <%= link_to image_tag('telefono.png', alt: 'CV', width: 20, height: 20).concat("+573213008822"),
+                    "tel:+573213008822", class: "flex transition scale-100 hover:scale-150 duration-300"%>
+      </div>
+      <div class="flex">
+        <%= link_to image_tag('correo.png', alt: 'CV', width: 20, height: 20).concat("aftorresl000@gmail.com"),
+                    "mailto:aftorresl000@gmail.com", class: "flex transition scale-100 hover:scale-150 duration-300"%>
       </div>
     </div>
-
-    <div class="bg-gray-400 text-left py-10 px-12 shadow-lg shadow-cyan-500/50">
-      <%= form_for @contacto, url: contactos_path do |f| %>
-    <div class="grid grid-cols-2 gap-8 py-5">
-          <div class="col-span-2">
-            <h1 class="text-2xl font-extrabold font-sans">Ingresar Detalles</h1>
-          </div>
-          <div>
-            <%= f.label :Nombre_Completo %>
-            <%= f.text_field :nombre, class: "w-full" %>
-          </div>
-          <div>
-            <%= f.label :Correo_Electronico %>
-            <%= f.text_field :email, class: "w-full" %>
-          </div>
-          <div class="col-span-2">
-            <%= f.label :Celular %>
-            <%= f.text_field :celular, class: "w-full" %>
-          </div>
-          <div class="col-span-2 mb-4">
-            <%= f.label :Mensaje %>
-            <%= f.text_area :mensaje, class: "w-full h-32" %>
-          </div>
-          <div class="col-span-2 flex justify-center items-center">
-            <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-2 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
-              <%= f.submit 'Enviar', class: 'm-2 text-white' %>
-            </button>
-          </div>
-        </div>
-      <% end %>
-    </div>
   </div>
-</body>
+
+  <div class="bg-gray-400 text-left py-10 px-12 shadow-lg shadow-cyan-500/50">
+    <%= form_for @contacto, url: contactos_path do |f| %>
+  <div class="grid grid-cols-2 gap-8 py-5">
+        <div class="col-span-2">
+          <h1 class="text-2xl font-extrabold font-sans">Ingresar Detalles</h1>
+        </div>
+        <div>
+          <%= f.label :Nombre_Completo %>
+          <%= f.text_field :nombre, class: "w-full" %>
+        </div>
+        <div>
+          <%= f.label :Correo_Electronico %>
+          <%= f.text_field :email, class: "w-full" %>
+        </div>
+        <div class="col-span-2">
+          <%= f.label :Celular %>
+          <%= f.text_field :celular, class: "w-full" %>
+        </div>
+        <div class="col-span-2 mb-4">
+          <%= f.label :Mensaje %>
+          <%= f.text_area :mensaje, class: "w-full h-32" %>
+        </div>
+        <div class="col-span-2 flex justify-center items-center">
+          <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-2 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
+            <%= f.submit 'Enviar', class: 'm-2 text-white' %>
+          </button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

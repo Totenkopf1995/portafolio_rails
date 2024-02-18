@@ -1,36 +1,30 @@
-<body class="bg-blue-950">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto py-5 text-white">
-    <div class="text-left py-10 sm:py-40 px-10">
-      <div>
-        <h1 class="text-5xl font-bold mb-4">Andres felipe <br>
-          torres lopez</h1>
-        <p class="py-7">
-          Estudiante de Tecnología en Análisis y Desarrollo de Software, enfoque en <br>
-          Ruby y Ruby on Rails.<br>
-          Completé cursos en Ciberseguridad Básica y Desarrollo Web.
-        </p>
-      </div>
-
-      <div class="grid grid-rows-3 gap-8 ">
-        <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
-          <%= link_to image_tag('linkedin.png', alt: 'Linkedin').concat("linkedin.com/in/andrestorresdeveloper"),
-                      "https://www.linkedin.com/in/andrestorresdeveloper", target: "_blank", class: "flex"%>
-        </div>
-
-        <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
-          <%= link_to image_tag('github.png', alt: 'github').concat("github.com/Totenkopf1995"),
-                      "https://github.com/Totenkopf1995", target: "_blank", class: "flex"%>
-        </div>
-
-        <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
-          <%= link_to image_tag('cv.png', alt: 'CV').concat("CV"),
-                      "https://www.canva.com/design/DAF5Xa5ia-I/RAmGCNXBiA1fzgDTu8Ez5w/view?utm_content=DAF5Xa5ia-I&utm_campaign=designshare&utm_medium=link&utm_source=editor", target: "_blank", class: "flex"%>
-        </div>
-      </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 container mx-auto py-5 text-white">
+  <div class="text-left py-10 sm:py-40 px-10">
+    <div>
+      <h1 class="text-5xl font-bold mb-4">Andres felipe <br>
+        torres lopez</h1>
+      <p class="py-7">
+        Estudiante de Tecnología en Análisis y Desarrollo de Software, enfoque en <br>
+        Ruby y Ruby on Rails.<br>
+        Completé cursos en Ciberseguridad Básica y Desarrollo Web.
+      </p>
     </div>
-
-    <div class="shadow-lg shadow-cyan-500/50 rounded-full">
-      <%= image_tag('foto.png', alt: 'foto', class: "rounded-full") %>
+    <div class="grid grid-rows-3 gap-8 ">
+      <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
+        <%= link_to image_tag('linkedin.png', alt: 'Linkedin').concat("linkedin.com/in/andrestorresdeveloper"),
+                    "https://www.linkedin.com/in/andrestorresdeveloper", target: "_blank", class: "flex"%>
+      </div>
+      <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
+        <%= link_to image_tag('github.png', alt: 'github').concat("github.com/Totenkopf1995"),
+                    "https://github.com/Totenkopf1995", target: "_blank", class: "flex"%>
+      </div>
+      <div class="flex  w-10 h-12 shadow-lg shadow-cyan-500/50 rounded-full transition scale-100 hover:scale-150 duration-300">
+        <%= link_to image_tag('cv.png', alt: 'CV').concat("CV"),
+                    "https://www.canva.com/design/DAF5Xa5ia-I/RAmGCNXBiA1fzgDTu8Ez5w/view?utm_content=DAF5Xa5ia-I&utm_campaign=designshare&utm_medium=link&utm_source=editor", target: "_blank", class: "flex"%>
+      </div>
     </div>
   </div>
-</body>
+  <div class="shadow-lg shadow-cyan-500/50 rounded-full">
+    <%= image_tag('foto.png', alt: 'foto', class: "rounded-full") %>
+  </div>
+</div>

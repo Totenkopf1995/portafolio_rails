@@ -1,28 +1,25 @@
-<header class="bg-blue-700 shadow-lg shadow-cyan-500/50">
-  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 container mx-auto py-5">
-    <div class="w-8">
-      <%= image_tag('logo.png', alt: 'Logo') %>
-    </div>
-    <div class="text-4xl font-bold text-white ">
-      <h1>Portafolio</h1>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 sm:gap-1 text-center text-white">
-      <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
-        <%= link_to 'Inicio', homes_index_path %>
-      </button>
-      <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
-        <%= link_to 'Proyectos', homes_proyect_path %>
-      </button>
-      <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
-        <%= link_to 'Educacion', homes_education_path %>
-      </button>
-      <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
-        <%= link_to 'Aptitudes', homes_aptitudes_path %>
-      </button>
-      <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
-        <%= link_to 'Contacto', homes_contact_path %>
-      </button>
-    </div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 container mx-auto py-5">
+  <div class="w-8">
+    <%= image_tag('logo.png', alt: 'Logo') %>
   </div>
-</header>
-
+  <div class="text-4xl font-bold text-white ">
+    <h1>Portafolio</h1>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 sm:gap-1 text-center text-white">
+    <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
+      <%= link_to 'Inicio', homes_index_path %>
+    </button>
+    <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
+      <%= link_to 'Proyectos', homes_proyect_path %>
+    </button>
+    <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
+      <%= link_to 'Educacion', homes_education_path %>
+    </button>
+    <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
+      <%= link_to 'Aptitudes', homes_aptitudes_path %>
+    </button>
+    <button class="bg-cyan-700 hover:bg-sky-500 shadow-lg shadow-cyan-500/50 rounded-full mx-10 sm:mx-1 transition scale-100 hover:scale-125 duration-300">
+      <%= link_to 'Contacto', homes_contact_path %>
+    </button>
+  </div>
+</div>
