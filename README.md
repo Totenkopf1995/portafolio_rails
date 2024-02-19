@@ -1,24 +1,21 @@
-# README
+# Portafolio personal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Portada
 
-Things you may want to cover:
+![portada](app/assets/images/portafolioPersonal.png)
 
-* Ruby version
+## Proyectos
 
-* System dependencies
+![portada](app/assets/images/proyectos.png)
 
-* Configuration
+## Educacion
 
-* Database creation
+![portada](app/assets/images/educacion.png)
 
-* Database initialization
+## Aptitudes
 
-* How to run the test suite
+![portada](app/assets/images/aptitudes.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contacto
 
-* Deployment instructions
-
-* ...
+![portada](app/assets/images/contacto.png)

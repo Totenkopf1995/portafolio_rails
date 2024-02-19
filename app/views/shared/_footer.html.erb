@@ -6,6 +6,6 @@
   <div class="text-right text-white">
     <p>Última modificación del proyecto: <%= `git log -1 --date=format:"%Y-%m-%d %H:%M:%S" --format="%cd"`.chomp %></p>
     <% actual= Time.now.strftime("%d-%m-%Y") %>
-    <%= "Fecha actual #{actual}." %>
+    <%= "Fecha actual: #{actual}." %>
   </div>
 </div>

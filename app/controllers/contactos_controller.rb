@@ -6,7 +6,7 @@ class ContactosController < ApplicationController
   def create
     @contacto = Contacto.new(contacto_params)
     if @contacto.save
-      redirect_to root_path, notice: "¡#{@contacto.nombre}, Gracias por tu mensaje!"
+      redirect_to contactos_path, notice: "¡#{@contacto.nombre}, Gracias por tu mensaje!"
     else
       render :new
     end

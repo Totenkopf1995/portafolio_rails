@@ -15,9 +15,21 @@
       <%= render 'shared/header' %>
     </header>
     <main class="flex-grow">
-      <% flash.each do |key, value| %>
-        <%= value %>
-      <% end %>
+      <div id="notification" class="text-yellow-400 px-4 py-2 mb-4 text-center text-2xl font-extrabold">
+        <% flash.each do |key, value| %>
+          <%= value %>
+        <% end %>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    var notification = document.getElementById('notification');
+                    if (notification) {
+                        notification.remove();
+                    }
+                }, 5000);
+            });
+        </script>
+      </div>
       <%= yield %>
     </main>
     <footer class="bg-gradient-to-r from-cyan-700 to-blue-700">
